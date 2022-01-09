@@ -39,7 +39,7 @@ export const createPost = async (req, res) => {
       if (err) {
         console.log(err);
       } else {
-        res.status(201).json({title: title, message: message});
+        res.status(200).json({title: title, message: message});
       }
       }
   );
@@ -57,7 +57,7 @@ export const updatePost = async (req, res) => {
         if (err) {
             console.log(err);
         } else {
-            res.json({title: title, message: message, id: id, completed: completed});
+            res.status(200).json({title: title, message: message, id: id, completed: completed});
         }
         }
     );

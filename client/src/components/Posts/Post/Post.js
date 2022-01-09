@@ -10,10 +10,8 @@ import useStyles from './styles';
 const Post = ({ post, setCurrentId }) => {
   const dispatch = useDispatch();
   const classes = useStyles();
-
   return (
     <Card className={classes.card}>
-      {/* <CardMedia className={classes.media}  title={post.title} /> */}
       <div className={classes.overlay2}>
         <Button style={{ color: 'black' }} size="small" onClick={() => setCurrentId(post.id)}><MoreHorizIcon fontSize="default" /></Button>
       </div>
@@ -26,7 +24,7 @@ const Post = ({ post, setCurrentId }) => {
       <CardActions>
         <Checkbox
           checked={post.completed}
-          onChange={() => {
+          onChange={(e) => {
             dispatch(updatePost(post.id, {id: post.id, title: post.title, message: post.message, completed: !post.completed}))
           }}
           color="primary"
