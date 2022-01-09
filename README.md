@@ -1,5 +1,7 @@
 Before executing the script you should change the user and password for the mysql DB on line 2 and 3 of the script. Also, you should change the mysql credentials to yours in the controllers/posts.js file.
 
+For now, the database is accessed through localhost, so that means you can see the responsive design and login on the local network on a cellphone, but you cannot see the cards containing the items because you can't access them from the DB server. You can try the To Do functionality on the computer running the client and server only.
+
 Technologies used: 
 
 Node 14.17.10

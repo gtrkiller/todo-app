@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "client": "cd .. && cd client && npm start",
-    "dev": "concurrently \"nodemon index.js\" \"npm run client\""
+    "client": "cd .. && cd client && set HTTPS=true&&npm start",
+    "dev": "concurrently \"set HTTPS=true&&nodemon index.js\" \"npm run client\""
     },
   "author": "",
   "license": "ISC",
