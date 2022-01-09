@@ -2,8 +2,6 @@ Before executing the script you should change the user and password for the mysq
 
 For now, the database is accessed through localhost, so that means you can see the responsive design and login on the local network on a cellphone, but you cannot see the cards containing the items because you can't access them from the DB server. You can try the To Do functionality on the computer running the client and server only.
 
-2nd COMMIT KNOWN BUG: After creating an item, the first click won't work if you try to edit or check the item, so it is advised to click once on the edit button an then test all the functionalities.
-
 Technologies used: 
 
 Node 14.17.10
